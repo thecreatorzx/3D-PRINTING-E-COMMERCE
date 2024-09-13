@@ -1,0 +1,14 @@
+.toast-custom {
+  background-color: #333;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+.toast-link {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.toast-link:hover {
+  color: #0056b3;
+}

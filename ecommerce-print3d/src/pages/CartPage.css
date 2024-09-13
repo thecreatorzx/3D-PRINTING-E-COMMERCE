@@ -1,0 +1,127 @@
+/* Cart Page Container */
+.cart-container {
+  max-width: 1200px; /* Adjusted max-width for a larger grid */
+  margin: auto;
+  padding: 20px;
+}
+
+/* Grid Layout for Cart Cards */
+.cart-container .row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem; /* Space between grid items */
+}
+
+/* Cart Card */
+
+.cart-container .cartCard{
+  width: 100%;
+  flex:1;
+}
+.cart-container .cart-card {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  flex: 1 1 calc(33.333% - 1rem); /* Adjust width for grid layout */
+} 
+
+.cart-container .cart-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Cart Card Image */
+.cart-container .cart-card-img {
+  border-bottom: 1px solid #ddd;
+  height: 180px; /* Consistent height */
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Cart Card Body */
+.cart-container .cart-card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+/* Cart Card Title */
+.cart-container .cart-card-title {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Cart Card Text */
+.cart-container .cart-card-text {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: #666;
+  padding-top: 2%;
+}
+
+/* Button Container */
+.cart-container .cart-btn-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Buttons */
+.cart-container .btn {
+  border: none;
+  font-size: 0.875rem;
+  padding: 8px 16px; /* Adjusted padding for a more uniform look */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+}
+
+/* Secondary Button */
+.cart-container .cart-btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: white;
+}
+
+.cart-container .cart-btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Danger Button */
+.cart-container .cart-btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+
+.cart-container .cart-btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Toastify Styling */
+.cart-container .toast-custom {
+  background-color: #333;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+.cart-container .toast-link {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.cart-container .toast-link:hover {
+  color: #0056b3;
+}

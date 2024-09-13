@@ -1,0 +1,102 @@
+/* Container */
+.container {
+  max-width: 1200px;
+}
+
+/* Home Header */
+.home-header {
+  margin-bottom: 2rem;
+  width: 100%; /* Ensure it takes the full width */
+}
+
+.home-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-header p.lead {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.home-header img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Blockquote */
+blockquote {
+  border-left: 5px solid #007bff;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+/* Card Layout */
+.Card {
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 300px;
+  min-width: 250px; /* Prevents cards from shrinking too much */
+}
+
+.card-img-top {
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 1.25rem;
+  flex: 1; /* Allows card-body to grow and push buttons to the bottom */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-footer {
+  display: flex;
+  gap: 0.5rem; /* Gap between buttons */
+  margin-top: auto; /* Pushes footer to the bottom of the card */
+}
+
+/* Buttons */
+.btn-primary {
+  margin-right: 0.5rem; /* Add gap between buttons */
+  width: 100%;
+}
+
+.btn-secondary {
+  margin-top: 0.5rem; /* Add vertical spacing */
+  width: 100%;
+}
+
+/* Row Layout */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Add space between cards */
+.row > .Card {
+  margin-bottom: 1rem; /* Ensure spacing between rows */
+}
